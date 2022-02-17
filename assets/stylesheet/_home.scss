@@ -1,0 +1,268 @@
+// Header 
+
+header {
+  padding: 2rem;
+  background-color: $primary-black;
+  color: #fff;
+  & a {
+    color: #fff;
+  }
+  & .animated-underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    margin-top: 5px;
+    border-radius: 1rem;
+    background: $primary-green;
+    transition: width .3s;
+  }
+  & .animated-underline:hover::after {
+    width: 100%;
+  }
+  & .logo {
+    font-size: 32px;
+  }
+  & li {
+    margin: 0 15px;
+    font-size: 1.2rem;
+  }
+}
+
+// Hero
+
+.hero {
+  background-color: #1A1A1A;
+  color: #fff;
+  & .container {
+    max-width: 600px;
+    padding: 1rem;
+  }
+  & img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  & .hero-content {
+    text-align: center;
+    & h3 {
+      font-size: 1.8rem;
+    }
+    & p {
+      font-size: 1.2rem;
+      padding: 2rem 0;
+    }
+    & .social-links {
+      & i {
+        color: #fff;
+        font-size: 20px;
+      }
+      & a {
+        margin: 0 8px;
+      }
+      & i:hover {
+        color: $primary-green;
+      }
+    }
+  }
+}
+
+// Skills
+
+.skills {
+  background-color: bisque;
+  & .section-heading {
+    & .underline {
+      width: 5%;
+    }
+  }
+  & h3 {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  & ul {
+    padding: 10px 0;
+    & li {
+      background-color: $primary-black;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 20px;
+      color: #fff;
+      margin: 10px 10px 10px 0;
+    }
+  }
+  & .all-skills {
+    // max-width: 800px;
+    & .underline {
+      width: 8%;
+    }
+    & .skills-list-left {
+      max-width: 700px;
+    }
+  } 
+}
+
+// Projects
+
+.projects {
+  & .underline {
+    width: 4%;
+  }
+  & .projects-list {
+    margin-top: 2rem;
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+  & .project-card {
+    // width: 240px;
+    padding: 10px;
+    border: 1px solid $light-grey;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    & img {
+      // width: 230px;
+      height: 180px;
+      object-fit: cover;
+    }
+    & .project-links {
+      & li {
+        margin: 0 5px;
+        font-size: 1rem;
+        background-color: $primary-black;
+        padding: 6px 8px;
+        border-radius: 10px;
+        & a {
+          color: #fff;
+          font-size: 0.8rem;
+        }
+        & i {
+          color: #fff;
+        }
+      }
+    }
+  }
+  & .project-tags {
+    border-top: 2px solid lightgrey;
+    padding: 1rem 0;
+    & li {
+      font-size: 0.8rem;
+      font-weight: 500;
+      background-color: $primary-green;
+      border-radius: 0.4rem;
+      padding: 4px 6px;
+      color: #fff;
+      margin: 0 1px;
+    }
+  }
+  & h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  & p {
+    font-size: 0.8rem;
+  }
+  & h4, & p {
+    text-align: center;
+  }
+  // & .view-all-projects {
+  //   margin-top: 2rem;
+  //   & .all-projects-btn {
+  //     background-color: $primary-green;
+  //     color: #fff;
+  //     font-size: 1.2rem;
+  //     font-weight: 500;
+  //     padding: 8px 10px;
+  //     border-radius: 0.8rem;
+  //   }
+  // }
+}
+
+// About
+
+.about {
+  background-color: beige;
+  & .underline {
+    width: 4%;
+  }
+  & .container {
+    max-width: 840px;
+  }
+  & .about-content {
+    text-align: left;
+    & .underline {
+      margin-left: 0;
+      margin-right: 0;
+      width: 10%;
+    }
+    & h5 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 10px 0;
+    }
+    & p {
+      margin-bottom: 3rem;
+      line-height: 1.4;
+      font-size: 15px;
+    }
+  }
+}
+
+// Contact
+
+.contact {
+  & .underline {
+    width: 5%;
+  }
+  & .form {
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 2rem;
+    & input, & label, & textarea {
+      display: block;
+      width: 100%;
+    }
+    & input, & textarea {
+      margin: 0.4rem 0 1rem 0;
+      padding: 8px;
+      font-family: inherit;
+      border-radius: 0.8rem;
+      border: 1px solid rgb(151, 151, 151);
+      outline: none;
+    }
+  }
+  & .contact-btn {
+    background-color: $primary-black;
+    padding: 10px 10px;
+    font-family: inherit;
+    color: #fff;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+// Footer
+
+.footer {
+  text-align: center;
+  background-color: $primary-black;
+  padding: 20px 0;
+  & i {
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0 3rem;
+  }
+  & i:hover {
+    color: $primary-green;
+  }
+}
