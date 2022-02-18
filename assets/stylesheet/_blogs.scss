@@ -1,7 +1,3 @@
-// body {
-//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-// }
-
 // h1 {
 //   text-align: center;
 //   font-size: 2rem;
@@ -45,3 +41,33 @@
 //     border-radius: 0.4rem;
 //   }
 // }
+
+// Blogs
+
+.blog-container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  & img {
+    width: 300px;
+  }
+  & li {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  & h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  & p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  & a {
+    background-color: $primary-black;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 0.3rem;
+  }
+}

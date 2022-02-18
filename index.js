@@ -8,13 +8,12 @@ function createUI(blogs) {
   blogs.forEach((blog) => {
 
     let blogContent = document.createElement('li');
-    // blogContent.classList.add('.blog-content');
 
     let blogImg = document.createElement('img');
     blogImg.src = blog.social_image;
 
-    // let blogText = document.createElement('div');
-    // blogText.classList.add('blog-text');
+    let blogText = document.createElement('div');
+    blogText.classList.add('.blog-text');
 
     let blogTitle = document.createElement('h2');
     blogTitle.innerText = blog.title;
@@ -27,9 +26,10 @@ function createUI(blogs) {
     readMore.target = '_blank';
     readMore.innerText = 'Read Article →';
 
-    blogContent.append(blogImg, blogTitle, blogDescription, readMore);
+    blogText.append(blogTitle, blogDescription, readMore);
 
-    // blogContent.append(blogImg, blogText);
+    blogContent.append(blogImg, blogText);
+
     rootElm.append(blogContent);
     displayBlogs.append(rootElm);
   });

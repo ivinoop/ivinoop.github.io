@@ -275,11 +275,9 @@ header li {
   margin-top: 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
 }
 
 .projects .project-card {
@@ -430,5 +428,41 @@ header li {
 
 .footer i:hover {
   color: #41B883;
+}
+
+.blog-container {
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.blog-container img {
+  width: 300px;
+}
+
+.blog-container li {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog-container h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.blog-container p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-container a {
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 0.3rem;
 }
 /*# sourceMappingURL=style.css.map */
