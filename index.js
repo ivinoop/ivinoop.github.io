@@ -9,8 +9,8 @@ function createUI(blogs) {
 
     let blogContent = document.createElement('li');
 
-    let blogImg = document.createElement('img');
-    blogImg.src = blog.social_image;
+    // let blogImg = document.createElement('img');
+    // blogImg.src = blog.social_image;
 
     let blogText = document.createElement('div');
     blogText.classList.add('.blog-text');
@@ -28,7 +28,7 @@ function createUI(blogs) {
 
     blogText.append(blogTitle, blogDescription, readMore);
 
-    blogContent.append(blogImg, blogText);
+    blogContent.append(blogText);
 
     rootElm.append(blogContent);
     displayBlogs.append(rootElm);
