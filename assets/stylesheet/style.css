@@ -488,7 +488,7 @@ header li {
   border-radius: 0.3rem;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 620px) {
   html {
     font-size: 13px;
   }
