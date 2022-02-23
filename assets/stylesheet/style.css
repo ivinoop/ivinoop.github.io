@@ -190,6 +190,27 @@ header li {
   font-size: 1.2rem;
 }
 
+.menu-icon .hamburger {
+  display: none;
+  border: none;
+  outline: none;
+  background: none;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu-icon .hamburger .lni {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu-icon i {
+  color: #fff;
+  font-size: 2rem;
+}
+
 .hero {
   background-color: #1A1A1A;
   color: #fff;
@@ -430,15 +451,6 @@ header li {
   color: #41B883;
 }
 
-@media (max-width: 576px) {
-  html {
-    font-size: 12px;
-  }
-  body {
-    padding: 0 1rem;
-  }
-}
-
 .blog-container {
   padding: 3rem;
   display: -webkit-box;
@@ -474,5 +486,21 @@ header li {
   color: #fff;
   padding: 6px 8px;
   border-radius: 0.3rem;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  header .logo {
+    font-size: 24px;
+    max-width: 400px;
+  }
+  header .navbar {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

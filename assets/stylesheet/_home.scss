@@ -29,6 +29,29 @@ header {
   }
 }
 
+// Responsive Icon
+
+.menu-icon {
+  & .hamburger {
+    display: none;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    & .lni {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  & i {
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+
 // Hero
 
 .hero {
@@ -263,16 +286,5 @@ header {
   }
   & i:hover {
     color: $primary-green;
-  }
-}
-
-// Media Queries
-
-@media (max-width: 576px) {
-  html {
-    font-size: 12px
-  };
-  body {
-    padding: 0 1rem;
   }
 }
