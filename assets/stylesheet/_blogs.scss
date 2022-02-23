@@ -2,14 +2,15 @@
 
 .blog-container {
   padding: 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  & img {
-    width: 300px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   & li {
+    width: 300px;
+    margin: 1rem;
+    padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
   }
   & h2 {
     font-size: 1.2rem;
@@ -18,7 +19,7 @@
   }
   & p {
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0;
   }
   & a {
     background-color: $primary-black;

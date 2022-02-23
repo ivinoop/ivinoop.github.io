@@ -8,9 +8,8 @@ function createUI(blogs) {
   blogs.forEach((blog) => {
 
     let blogContent = document.createElement('li');
-
-    // let blogImg = document.createElement('img');
-    // blogImg.src = blog.social_image;
+    blogContent.href = blog.url;
+    blogContent.target = '_blank';
 
     let blogText = document.createElement('div');
     blogText.classList.add('.blog-text');

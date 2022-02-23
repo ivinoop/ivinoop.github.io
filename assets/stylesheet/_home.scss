@@ -265,3 +265,14 @@ header {
     color: $primary-green;
   }
 }
+
+// Media Queries
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px
+  };
+  body {
+    padding: 0 1rem;
+  }
+}
