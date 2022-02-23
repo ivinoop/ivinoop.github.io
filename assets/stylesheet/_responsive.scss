@@ -2,18 +2,32 @@
 
 @media (max-width: 480px) {
   html {
-    font-size: 10px;
+    font-size: 13px;
   }
   header {
     & .logo {
-      font-size: 24px;
-      max-width: 400px;
+      font-size: 1.8rem;
     }
     & .navbar {
       display: none;
     }
-    & .hamburger {
-      display: block;
+    & .menu-icon {
+      & .hamburger {
+        display: block;
+      }
     }
+  }
+  & .hero {
+    & img {
+      width: 160px;
+      height: 160px;
+    } 
+  }
+  & .projects,
+  & .skills,
+  & .about ,
+  & .contact
+  {
+    padding: 2rem;
   }
 }
