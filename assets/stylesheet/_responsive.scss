@@ -5,15 +5,22 @@
     font-size: 13px;
   }
   header {
+    display: flex;
+    justify-content: space-between;
+    & .desktop-nav {
+      display: inline;
+    }
     & .logo {
       font-size: 1.8rem;
+      max-width: 200px;
     }
     & .navbar {
       display: none;
     }
     & .menu-icon {
+      padding-right: 20px;
       & .hamburger {
-        display: block;
+        display: inline;
       }
     }
   }
@@ -30,4 +37,7 @@
   {
     padding: 2rem;
   }
+  // & .mobile-menu {
+  //   display: block;
+  // }
 }

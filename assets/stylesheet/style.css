@@ -108,6 +108,16 @@ body {
           justify-content: space-between;
 }
 
+.jcr {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.jic {
+  justify-items: center;
+}
+
 .aic {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -190,25 +200,53 @@ header li {
   font-size: 1.2rem;
 }
 
+.menu-icon {
+  position: relative;
+}
+
 .menu-icon .hamburger {
   display: none;
   border: none;
   outline: none;
   background: none;
-  position: relative;
   z-index: 10;
   cursor: pointer;
-}
-
-.menu-icon .hamburger .lni {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .menu-icon i {
   color: #fff;
   font-size: 2rem;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: beige;
+  opacity: 0.85;
+  color: #1A1A1A;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  z-index: 13;
+}
+
+.mobile-menu .mobile-menu-close {
+  text-align: right;
+}
+
+.mobile-menu .mobile-menu-close i {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mobile-menu ul li {
+  margin: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .hero {
@@ -492,14 +530,29 @@ header li {
   html {
     font-size: 13px;
   }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .desktop-nav {
+    display: inline;
+  }
   header .logo {
     font-size: 1.8rem;
+    max-width: 200px;
   }
   header .navbar {
     display: none;
   }
+  header .menu-icon {
+    padding-right: 20px;
+  }
   header .menu-icon .hamburger {
-    display: block;
+    display: inline;
   }
   .hero img {
     width: 160px;

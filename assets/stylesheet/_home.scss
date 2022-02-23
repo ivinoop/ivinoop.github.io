@@ -29,26 +29,53 @@ header {
   }
 }
 
-// Responsive Icon
+// Mobile Menu Icon
 
 .menu-icon {
+  position: relative;
   & .hamburger {
     display: none;
     border: none;
     outline: none;
     background: none;
-    position: relative;
     z-index: 10;
     cursor: pointer;
-    & .lni {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    position: absolute;
   }
   & i {
     color: #fff;
     font-size: 2rem;
+  }
+}
+
+// Mobile Menu Page
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: beige;
+  opacity: 0.85;
+  color: $primary-black;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  z-index: 13;
+  & .mobile-menu-close {
+    text-align: right;
+    & i {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  & ul {
+    & li {
+      margin: 3rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
   }
 }
 
