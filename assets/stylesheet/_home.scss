@@ -45,7 +45,8 @@ header {
     width: 100%;
   }
   & .logo {
-    font-size: 32px;
+    font-size: 44px;
+    font-family: 'Montserrat Subrayada', sans-serif;
   }
   & li {
     margin: 0 15px;
@@ -334,7 +335,7 @@ header {
   & i {
     font-size: 1.4rem;
     color: #fff;
-    margin: 0 3rem;
+    margin: 0 1rem;
   }
   & i:hover {
     color: $primary-green;

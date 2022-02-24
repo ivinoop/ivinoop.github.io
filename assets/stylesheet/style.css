@@ -216,7 +216,8 @@ header .animated-underline:hover::after {
 }
 
 header .logo {
-  font-size: 32px;
+  font-size: 44px;
+  font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 header li {
@@ -506,7 +507,7 @@ header li {
 .footer i {
   font-size: 1.4rem;
   color: #fff;
-  margin: 0 3rem;
+  margin: 0 1rem;
 }
 
 .footer i:hover {
