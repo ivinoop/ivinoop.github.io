@@ -165,30 +165,6 @@ a {
   margin-top: 10px;
 }
 
-.banner {
-  padding: 1.1rem;
-  text-align: center;
-  font-size: 0.8rem;
-  background-color: #1A1A1A;
-  color: #fff;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.banner button {
-  font-size: 0.8rem;
-  font: inherit;
-  border: none;
-  outline: none;
-  background-color: #fff;
-  color: #1A1A1A;
-  border: 1px solid #fff;
-  padding: 0.3rem 0.8rem;
-  border-radius: 0.8rem;
-  margin: 10px 0;
-  cursor: pointer;
-}
-
 header {
   padding: 2rem;
   background-color: #1A1A1A;
@@ -249,11 +225,14 @@ header li {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: beige;
-  opacity: 0.85;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #1A1A1A;
-  height: 100%;
+  height: 50%;
   width: 100%;
+  opacity: 0.908;
   padding: 2rem;
   text-align: center;
   z-index: 13;
@@ -264,14 +243,22 @@ header li {
 }
 
 .mobile-menu .mobile-menu-close i {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.mobile-menu ul {
+  padding-top: 5rem;
 }
 
 .mobile-menu ul li {
-  margin: 3rem;
   font-size: 1.5rem;
   font-weight: 700;
+  margin: 1rem;
+}
+
+.mobile-menu ul li a {
+  color: #1A1A1A;
 }
 
 .hero {

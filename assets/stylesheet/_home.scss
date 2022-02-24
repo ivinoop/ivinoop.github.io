@@ -1,27 +1,3 @@
-// Banner
-
-.banner {
-  padding: 1.1rem;
-  text-align: center;
-  font-size: 0.8rem;
-  background-color: $primary-black;
-  color: #fff;
-  transition: all 0.2s;
-  & button {
-    font-size: 0.8rem;
-    font: inherit;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    color: $primary-black;
-    border: 1px solid #fff;
-    padding: 0.3rem 0.8rem;
-    border-radius: 0.8rem;
-    margin: 10px 0;
-    cursor: pointer;
-  }
-}
-
 // Header 
 
 header {
@@ -80,26 +56,32 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: beige;
-  opacity: 0.85;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: $primary-black;
-  height: 100%;
+  height: 50%;
   width: 100%;
+  opacity: 0.908;
   padding: 2rem;
   text-align: center;
   z-index: 13;
   & .mobile-menu-close {
     text-align: right;
     & i {
-      font-size: 1.5rem;
-      font-weight: bold;
+      font-size: 2rem;
+      font-weight: 900;
     }
   }
   & ul {
+    padding-top: 5rem;
     & li {
-      margin: 3rem;
       font-size: 1.5rem;
       font-weight: 700;
+      margin: 1rem;
+      & a {
+        color: $primary-black;
+      }
     }
   }
 }
