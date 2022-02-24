@@ -554,6 +554,9 @@ header li {
   html {
     font-size: 13px;
   }
+  .banner {
+    display: block;
+  }
   header {
     display: -webkit-box;
     display: -ms-flexbox;
