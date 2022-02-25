@@ -10,7 +10,6 @@
     margin: 1rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
   }
   & h2 {
     font-size: 1.2rem;
@@ -19,13 +18,17 @@
   }
   & p {
     font-size: 0.9rem;
-    margin: 2rem 0;
+    margin: 1rem 0 2rem 0;
   }
   & a {
     background-color: $primary-black;
     color: #fff;
     padding: 6px 8px;
     border-radius: 0.3rem;
+  }
+  & span {
+    font-size: 12px;
+    color: #606060;
   }
 }
 

@@ -19,6 +19,9 @@ function createUI(blogs) {
     let blogTitle = document.createElement('h2');
     blogTitle.innerText = blog.title;
 
+    let publishedDate = document.createElement('span');
+    publishedDate.innerText = 'Published: ' + blog.readable_publish_date;
+
     let blogDescription = document.createElement('p');
     blogDescription.innerText = blog.description;
 
@@ -27,7 +30,7 @@ function createUI(blogs) {
     readMore.target = '_blank';
     readMore.innerText = 'Read Article →';
 
-    blogText.append(blogTitle, blogDescription, readMore);
+    blogText.append(blogTitle, publishedDate, blogDescription, readMore);
 
     blogContent.append(blogText);
 
