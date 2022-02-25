@@ -22,7 +22,9 @@ header {
   }
   & .logo {
     font-size: 44px;
-    font-family: 'Montserrat Subrayada', sans-serif;
+    & a {
+      font-family: 'Montserrat Subrayada', sans-serif;
+    }
   }
   & li {
     margin: 0 15px;
@@ -62,7 +64,6 @@ header {
   color: $primary-black;
   height: 50%;
   width: 100%;
-  opacity: 0.908;
   padding: 2rem;
   text-align: center;
   z-index: 13;
