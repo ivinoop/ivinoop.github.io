@@ -129,40 +129,29 @@ header {
 // Skills
 
 .skills {
-  border-bottom: 0.5px solid $primary-green;
-  background-color: #fff;
   & .section-heading {
-    & .underline {
+    .underline {
       width: 5%;
     }
   }
-  & h3 {
-    margin: 8px 0;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  & ul {
-    padding: 10px 0;
+  & .skills-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 0.6rem;
     & li {
-      background-color: #fff;
-      border: 0.6px solid $primary-green;
-      padding: 10px 15px;
-      font-size: 1rem;
-      border-radius: 20px;
-      color: #000;
-      margin: 10px 10px 10px 0;
+      margin: 2rem;
+      & .mongodb {
+        width: 380px;
+      }
+    }
+    & img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
     }
   }
-  & .all-skills {
-    // max-width: 800px;
-    & .underline {
-      width: 8%;
-    }
-    & .skills-list-left {
-      max-width: 600px;
-    }
-  } 
 }
+
 
 // Projects
 
