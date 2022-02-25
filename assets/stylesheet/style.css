@@ -167,12 +167,11 @@ a {
 
 header {
   padding: 2rem;
-  background-color: #1A1A1A;
-  color: #fff;
+  color: #000;
 }
 
 header a {
-  color: #fff;
+  color: #000;
 }
 
 header .animated-underline::after {
@@ -219,7 +218,7 @@ header li {
 }
 
 .menu-icon i {
-  color: #fff;
+  color: #000;
   font-size: 2rem;
 }
 
@@ -264,8 +263,9 @@ header li {
 }
 
 .hero {
-  background-color: #1A1A1A;
-  color: #fff;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  color: #000;
 }
 
 .hero .container {
@@ -307,7 +307,8 @@ header li {
 }
 
 .skills {
-  background-color: bisque;
+  border: 1px solid lightgrey;
+  background-color: #fff;
 }
 
 .skills .section-heading .underline {
@@ -325,11 +326,12 @@ header li {
 }
 
 .skills ul li {
-  background-color: #1A1A1A;
+  background-color: #fff;
+  border: 2px solid lightgray;
   padding: 10px 15px;
   font-size: 1rem;
   border-radius: 20px;
-  color: #fff;
+  color: #000;
   margin: 10px 10px 10px 0;
 }
 
@@ -414,7 +416,9 @@ header li {
 }
 
 .about {
-  background-color: beige;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  color: #000;
 }
 
 .about .underline {

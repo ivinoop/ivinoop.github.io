@@ -2,10 +2,10 @@
 
 header {
   padding: 2rem;
-  background-color: $primary-black;
-  color: #fff;
+  // background-color: $primary-black;
+  color: #000;
   & a {
-    color: #fff;
+    color: #000;
   }
   & .animated-underline::after {
     content: '';
@@ -46,7 +46,7 @@ header {
     position: absolute;
   }
   & i {
-    color: #fff;
+    color: #000;
     font-size: 2rem;
   }
 }
@@ -90,8 +90,9 @@ header {
 // Hero
 
 .hero {
-  background-color: #1A1A1A;
-  color: #fff;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  color: #000;
   & .container {
     max-width: 600px;
     padding: 1rem;
@@ -129,7 +130,8 @@ header {
 // Skills
 
 .skills {
-  background-color: bisque;
+  border: 1px solid lightgrey;
+  background-color: #fff;
   & .section-heading {
     & .underline {
       width: 5%;
@@ -143,11 +145,12 @@ header {
   & ul {
     padding: 10px 0;
     & li {
-      background-color: $primary-black;
+      background-color: #fff;
+      border: 2px solid lightgray;
       padding: 10px 15px;
       font-size: 1rem;
       border-radius: 20px;
-      color: #fff;
+      color: #000;
       margin: 10px 10px 10px 0;
     }
   }
@@ -242,7 +245,9 @@ header {
 // About
 
 .about {
-  background-color: beige;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  color: #000;
   & .underline {
     width: 4%;
   }
