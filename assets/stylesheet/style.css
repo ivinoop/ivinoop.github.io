@@ -264,7 +264,7 @@ header li {
 
 .hero {
   background-color: #fff;
-  border: 1px solid lightgrey;
+  border: 0.5px solid #41B883;
   color: #000;
 }
 
@@ -294,7 +294,7 @@ header li {
 }
 
 .hero .hero-content .social-links i {
-  color: #fff;
+  color: #000;
   font-size: 20px;
 }
 
@@ -307,7 +307,7 @@ header li {
 }
 
 .skills {
-  border: 1px solid lightgrey;
+  border-bottom: 0.5px solid #41B883;
   background-color: #fff;
 }
 
@@ -327,7 +327,7 @@ header li {
 
 .skills ul li {
   background-color: #fff;
-  border: 2px solid lightgray;
+  border: 0.6px solid #41B883;
   padding: 10px 15px;
   font-size: 1rem;
   border-radius: 20px;
@@ -387,7 +387,7 @@ header li {
 }
 
 .projects .project-tags {
-  border-top: 2px solid lightgrey;
+  border-top: 2px solid #41B883;
   padding: 1rem 0;
 }
 

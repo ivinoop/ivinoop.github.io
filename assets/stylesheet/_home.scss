@@ -2,7 +2,6 @@
 
 header {
   padding: 2rem;
-  // background-color: $primary-black;
   color: #000;
   & a {
     color: #000;
@@ -91,7 +90,7 @@ header {
 
 .hero {
   background-color: #fff;
-  border: 1px solid lightgrey;
+  border: 0.5px solid $primary-green;
   color: #000;
   & .container {
     max-width: 600px;
@@ -114,7 +113,7 @@ header {
     }
     & .social-links {
       & i {
-        color: #fff;
+        color: #000;
         font-size: 20px;
       }
       & a {
@@ -130,7 +129,7 @@ header {
 // Skills
 
 .skills {
-  border: 1px solid lightgrey;
+  border-bottom: 0.5px solid $primary-green;
   background-color: #fff;
   & .section-heading {
     & .underline {
@@ -146,7 +145,7 @@ header {
     padding: 10px 0;
     & li {
       background-color: #fff;
-      border: 2px solid lightgray;
+      border: 0.6px solid $primary-green;
       padding: 10px 15px;
       font-size: 1rem;
       border-radius: 20px;
@@ -178,13 +177,10 @@ header {
     grid-gap: 1rem;
   }
   & .project-card {
-    // width: 240px;
     padding: 10px;
-    // border: 1px solid $light-grey;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     & img {
-      // width: 230px;
       height: 180px;
       object-fit: cover;
     }
@@ -206,7 +202,7 @@ header {
     }
   }
   & .project-tags {
-    border-top: 2px solid lightgrey;
+    border-top: 2px solid $primary-green;
     padding: 1rem 0;
     & li {
       font-size: 0.8rem;
@@ -229,17 +225,6 @@ header {
   & h4, & p {
     text-align: center;
   }
-  // & .view-all-projects {
-  //   margin-top: 2rem;
-  //   & .all-projects-btn {
-  //     background-color: $primary-green;
-  //     color: #fff;
-  //     font-size: 1.2rem;
-  //     font-weight: 500;
-  //     padding: 8px 10px;
-  //     border-radius: 0.8rem;
-  //   }
-  // }
 }
 
 // About
