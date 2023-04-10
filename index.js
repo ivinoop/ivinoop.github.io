@@ -1,6 +1,6 @@
 // Blogs
 
-const url = 'https://dev.to/api/articles?username=ivinoop';
+const url = 'https://dev.to/api/articles?username=vinoo';
 
 let rootElm = document.querySelector('.blog-container');
 let displayBlogs = document.querySelector('.display-blogs');
